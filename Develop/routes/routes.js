@@ -6,13 +6,13 @@ module.exports = function(app) {
 
     // GET route for getting all workouts
     app.get("/", function(req, res) {
-        res.sendFile(path.join(__dirname, "../public/index.html"));
+        res.sendFile(path.join(__dirname, "../../public/index.html"));
     });
     app.get("/exercise", function(req, res) {
-        res.sendFile(path.join(__dirname, "../public/exercise.html"));
+        res.sendFile(path.join(__dirname, "../../public/exercise.html"));
     });
     app.get("/stats", function(req, res) {
-        res.sendFile(path.join(__dirname, "../public/stats.html"));
+        res.sendFile(path.join(__dirname, "../../public/stats.html"));
     });
   };
   
