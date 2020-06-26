@@ -14,11 +14,7 @@ module.exports = function(app, Workout) {
   app.get("/api/workouts", function(req, res) {
     // returns all workouts
     console.log("api -- workouts get")
-    // Workout.deleteMany({}, function(err, idk) {
-    //   console.log(idk)
-    // })
     Workout.find(function (err, Workouts) {
-      console.log(Workouts)
       res.json(Workouts);
     })
 
@@ -55,7 +51,6 @@ module.exports = function(app, Workout) {
     //creates a workout through body
     console.log(req.body)
     Workout.find(function (err, Workouts) {
-      console.log(Workouts)
       res.json(Workouts);
     })
 
